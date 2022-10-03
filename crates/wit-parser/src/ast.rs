@@ -592,7 +592,7 @@ impl<'a> Type<'a> {
                 name: tokens.parse_id(span)?.into(),
                 span,
             })),
-            // `@foo`
+            // `%foo`
             Some((span, Token::ExplicitId)) => Ok(Type::Name(Id {
                 name: tokens.parse_explicit_id(span)?.into(),
                 span,
